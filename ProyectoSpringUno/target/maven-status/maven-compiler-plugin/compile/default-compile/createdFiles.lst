@@ -1,0 +1,9 @@
+com\alejandro\proyectospringuno\models\DirectorEmpleado.class
+com\alejandro\proyectospringuno\models\Empleado.class
+com\alejandro\proyectospringuno\models\CreacionInformes.class
+com\alejandro\proyectospringuno\utils\Resources.class
+com\alejandro\proyectospringuno\ProyectoSpringUno.class
+com\alejandro\proyectospringuno\models\JefeEmpleado.class
+com\alejandro\proyectospringuno\models\Informe.class
+com\alejandro\proyectospringuno\models\SecretarioEmpleado.class
+com\alejandro\proyectospringuno\config\AppConfig.class

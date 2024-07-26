@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:context="http://www.springframework.org/schema/context" 
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
+     http://www.springframework.org/schema/context 
+     http://www.springframework.org/schema/context/spring-context-3.1.xsd "> 
+    <!-- creacion de la dependencia-->
+    <context:property-placeholder location="classpath:datosEmpresa.properties"/>
+    <bean id="miInforme" class="com.alejandro.proyectospringuno.models.Informe" scope="singleton" >        
+    </bean>
+    <bean id="miEmpleado" class="com.alejandro.proyectospringuno.models.DirectorEmpleado" scope="singleton"
+    init-method="inicial" destroy-method="destruir" autowire="constructor">
+    </bean>
+    <bean id="miEmpleado2" class="com.alejandro.proyectospringuno.models.JefeEmpleado" scope="singleton">
+        <constructor-arg ref="miInforme"></constructor-arg>
+    </bean>
+    <bean id="miEmpleado3" class="com.alejandro.proyectospringuno.models.SecretarioEmpleado" scope="singleton">
+        <property name="creacionInformes" ref="miInforme"></property>
+        <property name="email" value="${email}"></property>
+        <property name="nombreEmpresa" value="${nombreEmpresa}"></property>
+    </bean>
+</beans>

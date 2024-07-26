@@ -1,0 +1,11 @@
+com\alejandro\proyectospringannotations\models\InformeFinanciero.class
+com\alejandro\proyectospringannotations\config\AppConfig.class
+com\alejandro\proyectospringannotations\models\CreacionInformes.class
+com\alejandro\proyectospringannotations\models\Empleado.class
+com\alejandro\proyectospringannotations\utils\Resources.class
+com\alejandro\proyectospringannotations\models\VicepresidenteEmpleado.class
+com\alejandro\proyectospringannotations\models\Informe.class
+com\alejandro\proyectospringannotations\models\SecretarioEmpleado.class
+com\alejandro\proyectospringannotations\models\DirectorEmpleado.class
+com\alejandro\proyectospringannotations\ProyectoSpringAnnotations.class
+com\alejandro\proyectospringannotations\models\JefeEmpleado.class
