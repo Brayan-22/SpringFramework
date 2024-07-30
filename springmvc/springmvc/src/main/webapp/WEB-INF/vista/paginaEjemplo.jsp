@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Hola mundo desde un controlador</h1>
-<a href="muestraFormulario">Ir al formulario</a>
+<a href="adios/muestraFormulario">Ir al formulario</a>
 </body>
 </html>
