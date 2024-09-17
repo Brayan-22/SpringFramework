@@ -50,6 +50,7 @@ public class PeliculaService {
         }
         ResponseEntity<String> response = restTemplate.getForEntity(strb.toString(), String.class);
         log.info(response.toString());
+        //return Optional.empty();
         return Optional.of(restTemplate.getForObject(strb.toString(), Pelicula.class));
         //return pelicula;
     }
