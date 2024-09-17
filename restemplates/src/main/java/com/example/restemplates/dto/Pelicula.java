@@ -7,14 +7,7 @@ import lombok.*;
 
 import java.io.Serializable;
 
-@Data
-public class Pelicula implements Serializable {
-    @JsonSerialize(using = ToStringSerializer.class)
-    private String Title;
-    private int Year;
-    private int Runtime;
-    private String Genre;
-    private String Director;
-    private String Language;
-    private String Country;
+
+public record Pelicula(String Title,int Year,String Runtime,String Genre,String Director,String Language,String Country)
+implements Serializable {
 }
