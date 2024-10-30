@@ -1,0 +1,9 @@
+services:
+  postgres:
+    restart: always
+    image: postgres:latest
+    environment:
+      - 'POSTGRES_PASSWORD=12345'
+      - 'POSTGRES_DB=springjwt'
+    ports:
+      - '5432:5432'
